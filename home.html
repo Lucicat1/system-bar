@@ -7,7 +7,7 @@
     </head>
     <body>
         <h1>Chiffre d'affaire</h1>
-        <progress id="money-bar" max="800" value="400"> 400€</progress>
+        <progress id="money-bar" max="800000" value="0"> 0€</progress>
         
         <h1>Difficult</h1>
 
@@ -63,8 +63,17 @@
         <div class="reset"> 
             <button>RESET</button>
         </div>
+        <input id="save_file" type="file" onchange="showFile(this)">
+        <div class="import_save">
+            <button>Importer le fichier de sauvegarde</button>
+        </div>
+        <div class="save">
+            <button>SAVE</button>
+        </div>
+        
         <script src="difficulté.js" defer></script>
         <script src="gain.js" defer></script>
         <script src="reset.js" defer></script>
+        <script src="save.js" defer></script>
     </body>
 </html>

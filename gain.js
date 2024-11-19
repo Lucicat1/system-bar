@@ -6,14 +6,13 @@ let succes = [document.getElementById("Succes-eco"),
     document.getElementById("Succes-cuisine"), 
     document.getElementById("Succes-service")];
 
-let bar_progres = document.getElementById("money-bar")
 let bonus_argent = 1
 let bonus_client = 4
-
+let argent = 0
 
 input_fin.addEventListener("click", function () {
     let roll_result = getSuccesTotal(succes)
-    let argent = getMoneyGained(roll_result)
+    argent += getMoneyGained(roll_result)
     console.log(argent)
     bar_progres.value = argent
 })
